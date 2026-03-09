@@ -8,7 +8,7 @@ Além do propósito acadêmico, o site também será utilizado como **portfólio
 
 ## 🌐 Acesse o site
 
-🔗 https://SEU-LINK-VERCEL-AQUI
+🔗 https://portifoliopessoal-woad.vercel.app/
 
 ## 📚 Sobre o projeto
 
