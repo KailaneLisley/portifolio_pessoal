@@ -9,34 +9,12 @@
     <title>Kailane Lisley</title>
 
     <link rel="icon" href="img/KL.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-content">
-
-            <div class="logo">
-                <img src="img/KL.png" alt="Logo de Kailane Lisley">
-                <h1>Kailane Lisley</h1>
-            </div>
-            
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#biografia">Biografia</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-
-            <button class="menu-toggle">☰</button>
-            <button class="theme-toggle">🌙</button>
-
-        </div>
-    </header>
+    <div id="header"></div>
 
     <main class="main">
 
@@ -60,118 +38,11 @@
 
         </section>
 
-        <!-- Seção SOBRE MIM -->
-        <section id="sobre" class="section container">
-            <h2>Sobre Mim</h2>
-            
-            <!-- <div class="about-content">
-                <div class="about-image">
-                    <img src="img/kai_sofa.jpg" alt="Foto profissional">
-                </div> -->
-
-                <div class="about-text">
-                    <p>Texto resumido...</p>
-
-                    <div class="extra-content">
-                        <p>Texto adicional escondido...</p>
-                    </div>
-
-                    <button class="btn-more">Mostrar mais</button>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Seção de HABILIDADES -->
-        <section id="habilidades" class="section container">
-            <h2>Habilidades</h2>
-
-            <div class="cards">
-        
-                <div class="card">
-                    <h3>Linguagens</h3>
-                        <ul>
-                            <li>C</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>Ferramentas</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Seção de PROJETOS -->
-        <section id="projetos" class="section container">
-            <h2>Projetos</h2>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <h3>Projeto 1</h3>
-                <p>Descrição...</p>
-            </article>
-
-            <article class="project-card">
-                <h3>Projeto 2</h3>
-                <p>Descrição...</p>
-            </article>
-
-            </div>
-
-        </section>
-
-        <!-- Seção BIOGRAFIA -->
-        <section id="biografia" class="section container">
-
-        </section>
-
-        <!-- Seção de CONTATO -->
-        <section id="contato" class="section container">
-            <h2>Contato</h2>
-
-            <form id="contact-form" class="form">
-
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
-                    <small class="error-message"></small>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <small class="error-message"></small>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem"></textarea>
-                    <small class="error-message"></small>
-                </div>
-
-                <button type="submit">Enviar</button>
-            </form>
-        
-        </section>
-
     </main>
 
-    <footer class="footer">
-        <h3>Onde me encontrar</h3>
+    <div id="footer"></div>
 
-        <a href="https://github.com/KailaneLisley/projeto-bio/tree/main" target="_blank">GitHub</a>
+    <script src="js/loadComponents.js"></script>
 
-        <p>&copy; 2026 - Kailane Lisley</p>
-    </footer>
 </body>
 </html>
