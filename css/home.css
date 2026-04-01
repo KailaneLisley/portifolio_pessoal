@@ -1,120 +1,6 @@
 /* ======================
-   VARIÁVEIS DE TEMA
+   HERO - HOME PAGE
 ====================== */
-
-:root {
-    --bg-color: #efefef;
-    --text-color: #111;
-    --header-bg: #d8cdb2;
-    --link-color: #111;
-    --link-hover: #2c84ff;
-}
-
-/* DARK MODE */
-.dark-mode {
-    --bg-color: #111;
-    --text-color: #f5f5f5;
-    --header-bg: #1e1e1e;
-    --link-color: #f5f5f5;
-}
-
-#theme-toggle {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* 1. Reset / configurações globais */
-
-/* RESET BÁSICO */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "MinhaFonte";
-    src: url("fonts/MinhaFonte.otf") format("opentype");
-}
-
-/* CONFIGURAÇÃO GLOBAL */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding-bottom: 60px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.section {
-    margin-top: 80px;
-}
-
-/* CONTAINER CENTRAL */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* 2. Estilos gerais do site */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* HEADER */
-.header {
-    background-color: var(--header-bg);
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-
-/* LOGO */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo h1 {
-    font-family: "MinhaFonte", serif;
-    align-items: center;
-    font-size: 24px;
-}
-
-/* MENU DE NAVEGAÇÃO */
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-.nav-list a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.nav-list a:hover {
-    color: #b46c00;
-}
-
-/* HERO */
 
 .hero {
     margin-top: 60px;
@@ -122,13 +8,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 60px;
 }
 
 /* TEXTO */
+
 .hero-text {
-    max-width: 520px;
+    max-width: 650px;
 }
 
 .hero h2 {
@@ -145,25 +31,16 @@ img {
 .hero p {
     line-height: 1.6;
 }
+
 /* IMAGEM */
 
 .hero-image img {
     max-width: 400px;
 }
 
-/* 3. Layout geral */
-
-/*.container {}*/
-/*.section {}*/
-
-/* 4. Componentes */
-
-/*.header {}*/
-/*.nav {}*/
-/*.hero {}*/
-/*.card {}*/
-
-/* 5. Responsividade */
+/* ======================
+   RESPONSIVIDADE HOME
+====================== */
 
 @media (max-width: 768px) {
 
