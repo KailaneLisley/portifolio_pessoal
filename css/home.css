@@ -3,12 +3,11 @@
 ====================== */
 
 .hero {
-    margin-top: 60px;
-
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 80px;
 }
 
 /* TEXTO */
@@ -36,6 +35,52 @@
 
 .hero-image img {
     max-width: 400px;
+}
+
+/* ===========================
+   Call-To-Action - HOME PAGE
+============================== */
+
+.cta-section {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.cta-card {
+    background-color: #062d63;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.cta-card h3 {
+    color: #fff7e6;
+    margin-bottom: 10px;
+}
+
+.cta-card p {
+    color: #eedeba;
+    font-size: 14px;
+}
+
+.nav-card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* ======================

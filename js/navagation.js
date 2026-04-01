@@ -20,3 +20,16 @@ document.addEventListener("componentsLoaded", () => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".nav-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            const page = card.dataset.page;
+            window.location.href = page;
+        });
+    });
+
+});
