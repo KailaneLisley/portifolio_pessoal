@@ -1,13 +1,16 @@
-function initTheme() {
+document.addEventListener("DOMContentLoaded", () => {
 
     const button = document.getElementById("theme-toggle");
 
-    // carregar tema salvo
+    if (!button) return;
+
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme === "dark") {
         document.body.classList.add("dark-mode");
         button.textContent = "☀️";
+    } else {
+        button.textContent = "🌙";
     }
 
     button.addEventListener("click", () => {
@@ -22,6 +25,5 @@ function initTheme() {
             button.textContent = "🌙";
         }
     });
-}
 
-export default initTheme;
+});

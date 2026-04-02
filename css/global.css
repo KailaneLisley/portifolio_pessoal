@@ -4,21 +4,38 @@
 
 :root {
     --bg-color: #efefef;
-    --text-color1: #072c61;
-    --text-color2: #ffffff;
+    --text-color: #072c61;
     --header-bg: #f5dfb4;
     --footer-bg: #072c61;
     --link-color: #072c61;
     --link-hover: #fff7eb;
+
+    --gradient-bg: linear-gradient(
+        180deg,
+        #ffffff,
+        #fff6e4,
+        #ffeecc,
+        #f5dfb4
+    );
 }
+
 
 /* DARK MODE */
 .dark-mode {
-    --bg-color: #764500;
+    --bg-color: #0f172a;
     --text-color: #f5f5f5;
-    --header-bg: #4c4c4c;
-    --footer-bg: #f5dfb4;
+    --header-bg: #1e293b;
+    --footer-bg: #020617;
     --link-color: #f5f5f5;
+    --link-hover: #bcdbff;
+
+    --gradient-bg: linear-gradient(
+        180deg,
+        #020617,
+        #020617,
+        #0f172a,
+        #1e293b
+    );
 }
 
 /* ======================
@@ -53,15 +70,15 @@ body {
     padding-bottom: 60px;
     transition: background 0.3s, color 0.3s;
 
+    background: var(--gradient-bg);
+    color: var(--text-color);
+
+    line-height: 1.6;
     margin: 0;
-    
-    background: linear-gradient(
-        180deg,
-        #ffffff,
-        #fff6e4,
-        #ffeecc,
-        #f5dfb4
-    );
+
+    transition:
+        background 0.4s ease,
+        color 0.4s ease;
 
 }
 
@@ -175,12 +192,6 @@ img {
     align-items: center;
 }
 
-.footer-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: var(--text-color2);
-}
-
 /* LOGO */
 
 .footer-logo {
@@ -192,6 +203,26 @@ img {
 .footer-logo img {
     width: 40px;
     height: 40px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: var(--text-color2);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #bcdbff;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #94a3b8;
 }
 
 /* ======================
