@@ -211,7 +211,7 @@ img {
 
 .social-links a {
     margin: 0 10px;
-    color: var(--text-color2);
+    color: var(--link-hover);
     text-decoration: none;
     transition: 0.3s;
 }
