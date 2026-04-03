@@ -2,39 +2,95 @@
    HERO 
 ========== */
 
-.about-hero {
-    margin-top: 70px;
-
+.hero-sobre {
+    padding-top: 40px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
 
-    gap: 80px;
+.hero-container {
+    width: 90%;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto texto";
+
+    align-items: center;
+    gap: 2rem;
 }
 
 /* TEXTO */
 
-.about-text {
-    max-width: 650px;
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.about-text h2 {
-    font-size: 65px;
-    font-family: "MinhaFonte", serif;
-    margin-bottom: 15px;
+.hero-texto h1 {
+    font-size: 3rem;
+    color: var(--text-color);
 }
 
-.about-text p {
-    font-size: 19px;
-    line-height: 1.7;
-    margin-bottom: 15px;
+.destaque {
+    color: var(--link-color);
+}
+
+.hero-texto h2 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.hero-texto p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* BOTÕES */
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: var(--button-bg);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+}
+
+.btn-outline {
+    border: 2px solid var(--link-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 /* IMAGEM */
 
-.about-image img {
-    max-width: 400px;
-    border-radius: 25px;
+.hero-texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-foto {
+    grid-area: foto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* =========
@@ -134,9 +190,25 @@
 
 @media (max-width: 900px) {
 
-    .about-hero {
-        flex-direction: column;
+    .hero-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "foto"
+            "texto";
         text-align: center;
+    }
+
+    .hero-texto {
+        align-items: center;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+    }
+
+    .shape-bg {
+        width: 300px;
+        height: 300px;
     }
 
     .about-text h2 {
