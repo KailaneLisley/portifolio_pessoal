@@ -11,7 +11,8 @@
     --button-hover: #cc9d55;
     --link-color: #a76d15;
     --link-hover: #fff7eb;
-    --card-color:#a76d15;
+    --card-color:#a2732b;
+    --card-button: #ffefcf;
     --card-text-color: #fff7e6;
 
     --gradient-bg: linear-gradient(
@@ -29,13 +30,14 @@
     --bg-color: #efefef;
     --text-color: #fff6e0;
     --header-bg: #f8e2ab;
-    --footer-bg: #f5deb5;
+    --footer-bg: #f1d4a0;
     --button-hover: #fff4e4;
     --button-bg: #b78e41;
     --link-hover: #a76d15;
     --link-color: #fff7eb;
     --card-color:#f3d796;
-    --card-text-color: #cd973f;
+    --card-button: #dcb66a;
+    --card-text-color: #c19248;
 
     --gradient-bg: linear-gradient(
         180deg,
@@ -182,6 +184,15 @@ img {
     cursor: pointer;
 }
 
+.name {
+    margin-top: 10px;
+    display: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* ======================
    FOOTER GLOBAL
 ====================== */
@@ -274,6 +285,11 @@ img {
         display: block;
     }
 
+    /* mostrar Nome */
+    .name {
+        display: block;
+    }
+
     /* quando aberto */
     .nav-list.active {
         display: flex;
@@ -286,7 +302,7 @@ img {
 @media (max-width: 900px) {
 
     .cta-section {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
