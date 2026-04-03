@@ -1,0 +1,158 @@
+/* =======
+   HERO 
+========== */
+
+.about-hero {
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+/* TEXTO */
+
+.about-text {
+    max-width: 650px;
+}
+
+.about-text h2 {
+    font-size: 65px;
+    font-family: "MinhaFonte", serif;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* IMAGEM */
+
+.about-image img {
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+/* =========
+   SEÇÕES 
+============ */
+
+.about-section {
+    margin-top: 80px;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: "MinhaFonte", serif;
+    color: var(--medio-blue);
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+/* ======================
+   ÁREAS DE ATUAÇÃO
+====================== */
+
+.area-grid {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.area-card {
+    background-color: var(--card-color);
+    padding: 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(130,84,0,0.15);
+}
+
+.area-card h3 {
+    font-family: "MinhaFonte", serif;
+    margin-bottom: 10px;
+}
+
+/* =============
+   OBJETIVOS
+=============== */
+
+.about-cta {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.about-cta button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--medio-blue);
+    color: white;
+
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.about-cta button:hover {
+    transform: translateY(-3px);
+}
+
+/* ======================
+   RESPONSIVIDADE SOBRE
+====================== */
+
+@media (max-width: 900px) {
+
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 45px;
+    }
+
+    .area-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .area-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
