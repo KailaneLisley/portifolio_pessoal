@@ -52,7 +52,7 @@
 }
 
 .cta-card {
-    background-color: #062d63;
+    background-color: var(--card-color);
     padding: 25px;
     border-radius: 25px;
     text-align: center;
@@ -66,14 +66,14 @@
 }
 
 .cta-card h3 {
-    color: #fff7e6;
+    color: var(--card-text-color);
     margin-bottom: 10px;
     font-size: 21px;
     font-family: "MinhaFonte", serif;
 }
 
 .cta-card p {
-    color: #eedeba;
+    color: var(--card-text-color);
     font-size: 14px;
 }
 

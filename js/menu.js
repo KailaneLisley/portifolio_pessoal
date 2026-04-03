@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("componentsLoaded", () => {
 
-    const toggle = document.getElementById("menu-toggle");
+    const menuToggle = document.getElementById("menu-toggle");
     const navList = document.querySelector(".nav-list");
 
-    if (!toggle || !navList) return;
+    if (!menuToggle || !navList) return;
 
-    toggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
         navList.classList.toggle("active");
     });
 

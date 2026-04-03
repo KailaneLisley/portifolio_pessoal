@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("componentsLoaded", initTheme);
+
+function initTheme() {
 
     const button = document.getElementById("theme-toggle");
-
-    if (!button) return;
 
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme === "dark") {
         document.body.classList.add("dark-mode");
         button.textContent = "☀️";
-    } else {
-        button.textContent = "🌙";
     }
 
     button.addEventListener("click", () => {
@@ -24,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("theme", "light");
             button.textContent = "🌙";
         }
-    });
 
-});
+    });
+}
