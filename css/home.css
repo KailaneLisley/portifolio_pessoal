@@ -321,6 +321,7 @@
 }
 
 .about-cta h2 {
+    font-family: "MinhaFonte", serif;
     font-size: 45px;
     margin-top: 10px;
 }
@@ -346,6 +347,7 @@
 }
 
 .nav-btn a {
+    font-family: "MinhaFonte", serif;
     color: var(--text-color);
     text-decoration: none;
 }

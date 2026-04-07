@@ -3,11 +3,6 @@
 ====================== */
 
 :root {
-
-    --section-light: #fff7e6;
-    --section-soft: #e0cba0;
-    --section-contrast: #6f4c16;
-
     --bg-color: #e9e4dd;
     --text-color: #613500;
     --header-bg: #ebd8a7;
@@ -46,9 +41,9 @@
 
     --gradient-bg: linear-gradient(
         180deg,
-        #5f3e00,
-        #472c00,
-        #311f00
+        #84611f,
+        #583a0a,
+        #583800
     );
 }
 
