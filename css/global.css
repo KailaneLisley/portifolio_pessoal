@@ -3,15 +3,20 @@
 ====================== */
 
 :root {
-    --bg-color: #efefef;
+
+    --section-light: #fff7e6;
+    --section-soft: #e0cba0;
+    --section-contrast: #6f4c16;
+
+    --bg-color: #e9e4dd;
     --text-color: #613500;
-    --header-bg: #f8e2ab;
+    --header-bg: #ebd8a7;
     --footer-bg: #cc9d55;
-    --button-bg: #fff4e4;
-    --button-hover: #cc9d55;
+    --button-bg: #fff8ed;
+    --button-hover: #cca770;
     --link-color: #a76d15;
     --link-hover: #fff7eb;
-    --card-color:#a2732b;
+    --card-color:#ebd8a7;
     --card-button: #ffefcf;
     --card-text-color: #fff7e6;
 
@@ -19,8 +24,7 @@
         180deg,
         #ffffff,
         #fff6e4,
-        #ffeecc,
-        #f5dfb4
+        #ffeecc
     );
 }
 
@@ -102,7 +106,21 @@ img {
 }
 
 .section {
-    margin-top: 80px;
+    padding: 80px 0;
+    position: relative;
+}
+
+.section-light {
+    background-color: var(--section-light);
+}
+
+.section-soft {
+    background-color: var(--section-soft);
+}
+
+.section-contrast {
+    background-color: var(--section-contrast);
+    color: var(--card-text-color);
 }
 
 /* ======================
@@ -120,19 +138,26 @@ img {
 ====================== */
 
 .header {
-   margin-top: 20px;
+    padding-top: 120px;
+    margin-top: 20px;
 }
 
 .header-content {
-    background-color: var(--header-bg);
-    border-radius: 50px;
-    padding: 12px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    background: transparent;
+
+    z-index: 999;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    box-shadow: 0 5px 15px rgba(74, 42, 0, 0.08);
+    padding: 20px 60px;
 }
 
 /* LOGO */
@@ -141,6 +166,8 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .header-logo img {
@@ -163,11 +190,13 @@ img {
     color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
+    padding: 8px 18px;
+
 }
 
 .nav-list a:hover {
-    background-color: var(--button-hover);
-    color: var(--link-hover);
+    border: 1px solid var(--text-color);
+    background-color: transparent;
 }
 
 .nav-list {
