@@ -345,6 +345,11 @@
     transform: translateY(-3px);
 }
 
+.nav-btn a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 /* ======================================================
    RESPONSIVIDADE GLOBAL
 ====================================================== */

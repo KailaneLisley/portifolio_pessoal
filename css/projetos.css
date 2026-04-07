@@ -1,0 +1,144 @@
+.page-title {
+    text-align: center;
+    font-family: "MinhaFonte", serif;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.page-subtitle {
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.group-title {
+    font-family: "MinhaFonte", serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.section + .section {
+    padding-top: 0;
+}
+
+/* ===== GRID ===== */
+
+.projects-grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* ===== CARD ===== */
+
+.project-card {
+    background-color: var(--card-color);
+    border-radius: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(130, 84, 0, 0.15);
+}
+
+/* ===== THUMB ===== */
+
+.project-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: var(--section-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== CORPO ===== */
+
+.project-body {
+    background-color: var(--card-button);
+    padding: 18px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-body h3 {
+    font-family: "MinhaFonte", serif;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.project-body > p {
+    font-size: 15px;
+    color: var(--card-text-color);
+    line-height: 1.5;
+}
+
+/* ===== CONTEÚDO EXTRA (oculto por padrão) ===== */
+
+.project-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.project-extra.aberto {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 4px;
+}
+
+.project-extra p {
+    font-size: 14px;
+    color: var(--card-text-color);
+    line-height: 1.5;
+    padding-left: 10px;
+    border-left: 3px solid var(--link-color);
+}
+
+/* ===== BOTÃO VER MAIS ===== */
+
+.project-toggle {
+    align-self: flex-start;
+    margin-top: 6px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--card-color);
+    color: var(--link-color);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.project-toggle:hover {
+    transform: translateY(-2px);
+}
+
+.project-toggle.aberto {
+    /* seta vira pra cima quando expandido */
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 600px) {
+    .page-title  { font-size: 36px; }
+    .group-title { font-size: 22px; }
+}

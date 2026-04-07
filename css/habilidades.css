@@ -1,0 +1,39 @@
+.page-title {
+    font-family: "MinhaFonte", serif;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    max-width: 650px;
+}
+
+.group-title {
+    font-family: "MinhaFonte", serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+.pills-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+/* Reaproveitando .pill do home.css com leve adaptação */
+.pills-group .pill {
+    cursor: default;
+    font-size: 16px;
+}
+
+/* Espaço entre seções */
+.section + .section {
+    padding-top: 0;
+}
+
+@media (max-width: 600px) {
+    .page-title { font-size: 36px; }
+    .group-title { font-size: 22px; }
+}

@@ -106,24 +106,6 @@ img {
     height: auto;
 }
 
-.section {
-    padding: 80px 0;
-    position: relative;
-}
-
-.section-light {
-    background-color: var(--section-light);
-}
-
-.section-soft {
-    background-color: var(--section-soft);
-}
-
-.section-contrast {
-    background-color: var(--section-contrast);
-    color: var(--card-text-color);
-}
-
 /* ======================
    CONTAINER
 ====================== */
@@ -141,6 +123,7 @@ img {
 .header {
     padding-top: 120px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .header-content {

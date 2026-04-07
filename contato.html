@@ -2,56 +2,103 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Kailane Lisley">
-    <meta name="description" content="Portfólio pessoal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-
+    <title>Contato | Kailane Lisley</title>
     <link rel="icon" href="img/KL.png">
     <link rel="stylesheet" href="css/global.css">
-
+    <link rel="stylesheet" href="css/contato.css">
 </head>
-
 <body>
-
     <div id="header"></div>
 
-    <main>
-        <section id="contato" class="section container">
-                <h2>Contato</h2>
+    <main class="main">
 
-                <form id="contact-form" class="form">
+        <section class="section container contato-hero">
+            <h1 class="page-title">Vamos conversar?</h1>
+            <p class="page-subtitle">
+                Se quiser trocar ideias sobre tecnologia, pesquisa, design ou oportunidades
+                de colaboração, fique à vontade para entrar em contato.
+            </p>
+        </section>
+
+        <section class="section container contato-wrapper">
+
+            <!-- LINKS DIRETOS -->
+            <div class="contato-links">
+
+                <h2 class="group-title">Me encontre por aqui</h2>
+
+                <a href="mailto:kailane@email.com" class="contato-card">
+                    <span class="contato-icon">✉️</span>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>kailane@email.com</p>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/kailanelisley" target="_blank" class="contato-card">
+                    <span class="contato-icon">💼</span>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <p>linkedin.com/in/kailanelisley</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/kailanelisley" target="_blank" class="contato-card">
+                    <span class="contato-icon">🐙</span>
+                    <div>
+                        <strong>GitHub</strong>
+                        <p>github.com/kailanelisley</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div class="contato-form-wrapper">
+
+                <h2 class="group-title">Envie uma mensagem</h2>
+
+                <form class="contato-form" id="contato-form">
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome">
-                        <small class="error-message"></small>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                        <small class="error-message"></small>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Sobre o que quer falar?">
                     </div>
 
                     <div class="form-group">
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
-                        <small class="error-message"></small>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
                     </div>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="form-btn">Enviar mensagem</button>
+
+                    <p class="form-feedback" id="form-feedback"></p>
+
                 </form>
-            
-            </section>
+
+            </div>
+
+        </section>
+
     </main>
 
     <div id="footer"></div>
 
-    <script src="js/loadComponents.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/footer.js"></script>
-
+    <script src="js/loadComponents.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/contato.js" defer></script>
 </body>
 </html>
