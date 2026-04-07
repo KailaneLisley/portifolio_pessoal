@@ -91,17 +91,17 @@
 }
 
 /* ======================================================
-   CTA - HOME
+   PAGES CARDS - HOME
 ====================================================== */
 
-.cta-section {
+.pages-section {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.cta-card {
+.pages-card {
     background-color: var(--card-color);
     padding: 20px 30px;
     border-radius: 25px;
@@ -110,12 +110,12 @@
     transition: all 0.3s ease;
 }
 
-.cta-card:hover {
+.pages-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(130, 84, 0, 0.15);
 }
 
-.cta-card a {
+.pages-card a {
     display: inline-block;
     padding: 8px 20px;
     border-radius: 20px;
@@ -128,8 +128,8 @@
     transition: all 0.3s ease;
 }
 
-.cta-card p {
-    font-size: 14px;
+.pages-card p {
+    font-size: 16px;
     color: var(--card-text-color);
 }
 
@@ -330,7 +330,7 @@
         justify-content: center;
     }
 
-    .cta-section {
+    .pages-section {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -341,7 +341,7 @@
 
 @media (max-width: 600px) {
 
-    .cta-section {
+    .pages-section {
         grid-template-columns: 1fr;
     }
 
