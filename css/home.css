@@ -151,7 +151,7 @@
 
 .hero-container {
     width: 90%;
-    margin: 40px auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "foto texto";
@@ -196,7 +196,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 80%;
 }
 
 
@@ -260,28 +260,83 @@
     margin-bottom: 10px;
 }
 
+/* ======================================================
+   ACADEMICO - SOBRE
+====================================================== */
+
+.academic-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.academic-column {
+    flex: 1;
+}
+
+.academic-column h2 {
+    font-family: "MinhaFonte", serif;
+    margin-bottom: 25px;
+    font-size: 30px;
+    align-items: center;
+}
+
+.pill {
+    background-color: var(--card-color);
+    padding: 14px 30px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(48, 30, 0, 0.08);
+}
+
+/* FOTO CENTRAL */
+.academic-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.academic-image img {
+    max-width: 400px;
+    height: auto;
+}
+
 
 /* ======================================================
    CTA FINAL - SOBRE
 ====================================================== */
 
 .about-cta {
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .about-cta h2 {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.about-cta p {
+    font-size: 18px;
 }
 
 .about-cta button {
+    margin-top: 15px;
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    background-color: var(--medio-blue);
-    color: white;
+    background-color: var(--card-color);
+    color: var(--text-color);
     font-size: 18px;
     transition: all 0.3s ease;
 }
@@ -289,7 +344,6 @@
 .about-cta button:hover {
     transform: translateY(-3px);
 }
-
 
 /* ======================================================
    RESPONSIVIDADE GLOBAL
@@ -322,6 +376,11 @@
         text-align: center;
     }
 
+    .hero-foto {
+        width: 100%;
+        align-items: center;
+    }
+
     .hero-texto {
         align-items: center;
     }
@@ -331,11 +390,25 @@
     }
 
     .pages-section {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 
     .area-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
+    }
+
+        .academic-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .academic-image {
+        order: -1; /* coloca a foto em cima no mobile */
+        margin-bottom: 30px;
+    }
+
+    .academic-column {
+        width: 100%;
     }
 }
 

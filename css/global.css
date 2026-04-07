@@ -11,7 +11,7 @@
     --bg-color: #e9e4dd;
     --text-color: #613500;
     --header-bg: #ebd8a7;
-    --footer-bg: #cc9d55;
+    --footer-bg: #e6c88c;
     --button-bg: #fff8ed;
     --button-hover: #cca770;
     --link-color: #a76d15;
@@ -23,6 +23,7 @@
     --gradient-bg: linear-gradient(
         180deg,
         #ffffff,
+        #fffaf2,
         #fff6e4,
         #ffeecc
     );
