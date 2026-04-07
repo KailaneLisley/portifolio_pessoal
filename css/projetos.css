@@ -15,6 +15,14 @@
     font-family: "MinhaFonte", serif;
     font-size: 28px;
     margin-bottom: 25px;
+    margin-top: 40px;
+}
+
+.section p {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .section + .section {
@@ -134,6 +142,41 @@
 
 .project-toggle.aberto {
     /* seta vira pra cima quando expandido */
+}
+
+.about-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.about-cta p {
+    font-size: 20px;
+}
+
+.about-cta button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+    transform: translateY(-3px);
+}
+
+.nav-btn a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /* ===== RESPONSIVO ===== */
