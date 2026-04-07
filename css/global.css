@@ -15,7 +15,7 @@
     --button-bg: #fff8ed;
     --button-hover: #cca770;
     --link-color: #a76d15;
-    --link-hover: #fff7eb;
+    --link-hover: #d5ac5a;
     --card-color:#ebd8a7;
     --card-button: #ffefcf;
     --card-text-color: #976c37;
@@ -82,7 +82,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color1);
     line-height: 1.6;
-    padding-bottom: 60px;
     transition: background 0.3s, color 0.3s;
 
     background: var(--gradient-bg);
@@ -243,19 +242,19 @@ img {
 
 .social-links a {
     margin: 0 10px;
-    color: var(--link-hover);
+    color: var(--link-color);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .social-links a:hover {
-    color: var(--link-color);
+    color: var(--link-hover);
 }
 
 .footer p {
     text-align: right;
     font-size: 14px;
-    color: var(--link-hover);
+    color: var(--link-color);
 }
 
 /* ======================

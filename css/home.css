@@ -350,6 +350,10 @@
     text-decoration: none;
 }
 
+.nav-btn a:hover {
+    color: var(--link-hover);
+}
+
 /* ======================================================
    RESPONSIVIDADE GLOBAL
 ====================================================== */

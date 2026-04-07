@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("componentsLoaded", () => {
 
     const year = document.getElementById("year");
 
