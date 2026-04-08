@@ -36,26 +36,6 @@
 
 /* ===== HERO - TEXTO ===== */
 
-.hero-sobre {
-    padding-top: 40px;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-
-.hero-container {
-    width: 90%;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "foto texto";
-    align-items: center;
-    gap: 2rem;
-}
-
-/* ===== HERO SOBRE - TEXTO ===== */
-
 .hero-texto {
     grid-area: texto;
     display: flex;
@@ -84,11 +64,46 @@
     color: var(--link-color);
 }
 
+.sobre-texto h2 {
+    font-family: "MinhaFonte", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 /* ===== HERO - IMAGEM ===== */
 
 .hero-image img {
     max-width: 450px;
-    position: relative;
+}
+
+/* ===== HERO - BOTÕES ===== */
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: var(--button-bg);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--button-hover);
+}
+
+.btn-outline {
+    border: 2px solid var(--link-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--link-color);
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 /* ======================================================
@@ -108,7 +123,7 @@
     border-radius: 25px;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pages-card:hover {
@@ -126,7 +141,7 @@
     font-size: 18px;
     font-family: "MinhaFonte", serif;
     margin-bottom: 15px;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .pages-card p {
@@ -134,13 +149,9 @@
     color: var(--card-text-color);
 }
 
-
 /* ======================================================
    HERO - SOBRE
 ====================================================== */
-.hero-text p {
-    font-size: 18px;
-}
 
 .hero-sobre {
     padding-top: 40px;
@@ -160,34 +171,8 @@
     gap: 2rem;
 }
 
-/* ===== HERO SOBRE - BOTÕES ===== */
-
-.hero-botoes {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-primary {
-    background: var(--button-bg);
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--text-color);
-    transition: all 0.3s ease;
-    border: 1px solid var(--text-color);
-}
-
-.btn-primary:hover {
-    background: var(--button-hover);
-}
-
-.btn-outline {
-    border: 2px solid var(--link-color);
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--link-color);
-    transition: all 0.3s ease;
+.hero-text p {
+    font-size: 18px;
 }
 
 /* ===== HERO SOBRE - IMAGEM ===== */
@@ -200,7 +185,6 @@
     width: 80%;
 }
 
-
 /* ======================================================
    SEÇÃO SOBRE
 ====================================================== */
@@ -210,10 +194,9 @@
 }
 
 .about-section h2 {
+    font-family: "MinhaFonte", serif;
     font-size: 40px;
     margin-bottom: 20px;
-    font-family: "MinhaFonte", serif;
-    color: var(--medio-blue);
 }
 
 .about-section p {
@@ -232,7 +215,6 @@
     margin-bottom: 10px;
 }
 
-
 /* ======================================================
    ÁREAS DE ATUAÇÃO
 ====================================================== */
@@ -248,7 +230,7 @@
     background-color: var(--card-color);
     padding: 25px;
     border-radius: 25px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .area-card:hover {
@@ -262,7 +244,7 @@
 }
 
 /* ======================================================
-   ACADEMICO - SOBRE
+   ACADÊMICO - SOBRE
 ====================================================== */
 
 .academic-section {
@@ -279,19 +261,19 @@
 
 .academic-column h2 {
     font-family: "MinhaFonte", serif;
-    margin-bottom: 25px;
     font-size: 30px;
-    align-items: center;
+    margin-bottom: 25px;
 }
 
 .pill {
+    display: block;
     background-color: var(--card-color);
     padding: 14px 30px;
     border-radius: 50px;
     margin-bottom: 18px;
     font-size: 18px;
-    transition: 0.3s ease;
     cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pill:hover {
@@ -299,7 +281,6 @@
     box-shadow: 0 8px 18px rgba(48, 30, 0, 0.08);
 }
 
-/* FOTO CENTRAL */
 .academic-image {
     flex: 1;
     display: flex;
@@ -311,9 +292,8 @@
     height: auto;
 }
 
-
 /* ======================================================
-   CTA FINAL - SOBRE
+   CTA FINAL
 ====================================================== */
 
 .about-cta {
@@ -340,17 +320,20 @@
     background-color: var(--card-color);
     color: var(--text-color);
     font-size: 18px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .about-cta button:hover {
     transform: translateY(-3px);
 }
 
+/* ===== NAV-BTN ===== */
+
 .nav-btn a {
     font-family: "MinhaFonte", serif;
     color: var(--text-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav-btn a:hover {
@@ -358,7 +341,7 @@
 }
 
 /* ======================================================
-   RESPONSIVIDADE GLOBAL
+   RESPONSIVIDADE
 ====================================================== */
 
 @media (max-width: 900px) {
@@ -366,18 +349,6 @@
     .hero {
         flex-direction: column;
         text-align: center;
-    }
-
-    .hero-text h2 {
-        font-size: 50px;
-    }
-
-    .hero-text h3 {
-        font-size: 20px;
-    }
-
-    .hero-text p {
-        font-size: 15px;
     }
 
     .hero-container {
@@ -402,11 +373,11 @@
     }
 
     .pages-section {
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
     }
 
     .area-grid {
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
     }
 
     .academic-section {
@@ -416,7 +387,6 @@
 
     .academic-image {
         order: -1;
-        /* coloca a foto em cima no mobile */
         margin-bottom: 30px;
     }
 
@@ -426,14 +396,6 @@
 }
 
 @media (max-width: 600px) {
-
-    .pages-section {
-        grid-template-columns: 1fr;
-    }
-
-    .area-grid {
-        grid-template-columns: 1fr;
-    }
 
     .hero-image img {
         max-width: 300px;
