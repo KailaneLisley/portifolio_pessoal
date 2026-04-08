@@ -11,17 +11,15 @@
     --button-hover: #cca770;
     --link-color: #a76d15;
     --link-hover: #d5ac5a;
-    --card-color:#ebd8a7;
+    --card-color: #ebd8a7;
     --card-button: #ffefcf;
     --card-text-color: #976c37;
 
-    --gradient-bg: linear-gradient(
-        180deg,
-        #ffffff,
-        #fffaf2,
-        #fff6e4,
-        #ffeecc
-    );
+    --gradient-bg: linear-gradient(180deg,
+            #ffffff,
+            #fffaf2,
+            #fff6e4,
+            #ffeecc);
 }
 
 /* DARK MODE */
@@ -35,16 +33,14 @@
     --button-bg: #b78e41;
     --link-hover: #a76d15;
     --link-color: #fff7eb;
-    --card-color:#f3d796;
+    --card-color: #f3d796;
     --card-button: #dcb66a;
     --card-text-color: #c19248;
 
-    --gradient-bg: linear-gradient(
-        180deg,
-        #84611f,
-        #583a0a,
-        #583800
-    );
+    --gradient-bg: linear-gradient(180deg,
+            #7c5f2a,
+            #61420e,
+            #5a3d0b);
 }
 
 /* ======================
@@ -163,7 +159,7 @@ img {
 .nav-list a {
     padding: 8px 18px;
     border-radius: 20px;
-    background-color: var(--button-bg); 
+    background-color: var(--button-bg);
     transition: 0.3s;
     color: var(--link-color);
     text-decoration: none;
@@ -284,7 +280,7 @@ img {
         background: var(--header-bg);
         padding: 20px;
         border-radius: 20px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
     /* mostrar ☰ */

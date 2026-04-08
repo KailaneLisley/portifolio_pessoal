@@ -25,7 +25,7 @@
     margin-bottom: 30px;
 }
 
-.section + .section {
+.section+.section {
     padding-top: 0;
 }
 
@@ -86,7 +86,7 @@
     color: var(--text-color);
 }
 
-.project-body > p {
+.project-body>p {
     font-size: 15px;
     color: var(--card-text-color);
     line-height: 1.5;
@@ -184,6 +184,11 @@
 /* ===== RESPONSIVO ===== */
 
 @media (max-width: 600px) {
-    .page-title  { font-size: 36px; }
-    .group-title { font-size: 22px; }
+    .page-title {
+        font-size: 36px;
+    }
+
+    .group-title {
+        font-size: 22px;
+    }
 }

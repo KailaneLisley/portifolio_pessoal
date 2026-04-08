@@ -112,8 +112,13 @@
         height: 70px;
     }
 
-    .page-title  { font-size: 36px; }
-    .group-title { font-size: 24px; }
+    .page-title {
+        font-size: 36px;
+    }
+
+    .group-title {
+        font-size: 24px;
+    }
 }
 
 .about-cta {

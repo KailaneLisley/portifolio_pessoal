@@ -10,7 +10,7 @@
     gap: 80px;
 }
 
-.hero > * {
+.hero>* {
     position: relative;
     z-index: 1;
 }
@@ -26,7 +26,8 @@
     background-position: left center;
     background-size: 550px;
 
-    opacity: 0.3; /* intensidade da marca d'água */
+    opacity: 0.3;
+    /* intensidade da marca d'água */
     filter: blur(0px);
 
     pointer-events: none;
@@ -408,13 +409,14 @@
         grid-template-columns: repeat(1fr);
     }
 
-        .academic-section {
+    .academic-section {
         flex-direction: column;
         text-align: center;
     }
 
     .academic-image {
-        order: -1; /* coloca a foto em cima no mobile */
+        order: -1;
+        /* coloca a foto em cima no mobile */
         margin-bottom: 30px;
     }
 

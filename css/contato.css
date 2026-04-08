@@ -144,9 +144,14 @@
         gap: 40px;
     }
 
-    .page-title { font-size: 36px; }
+    .page-title {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 600px) {
-    .form-btn { align-self: stretch; text-align: center; }
+    .form-btn {
+        align-self: stretch;
+        text-align: center;
+    }
 }

@@ -6,7 +6,7 @@ function initAllCarousels() {
 
     document.querySelectorAll(".skills-carousel").forEach(carousel => {
 
-        const track   = carousel.querySelector(".carousel-track");
+        const track = carousel.querySelector(".carousel-track");
         const window_ = carousel.querySelector(".carousel-window");
         const prevBtn = carousel.querySelector(".carousel-arrow.prev");
         const nextBtn = carousel.querySelector(".carousel-arrow.next");
@@ -17,7 +17,7 @@ function initAllCarousels() {
         function visibleCount() {
             const w = window_.offsetWidth;
             if (w >= 3 * 160 + 2 * 30) return 3;
-            if (w >= 2 * 140 + 20)     return 2;
+            if (w >= 2 * 140 + 20) return 2;
             return 1;
         }
 
@@ -31,7 +31,7 @@ function initAllCarousels() {
 
         // clonar itens para loop infinito
         const originals = Array.from(track.children);
-        const total     = originals.length;
+        const total = originals.length;
 
         // adiciona clones no fim e no início
         originals.forEach(item => {
@@ -48,7 +48,7 @@ function initAllCarousels() {
         function goTo(index, animate = true) {
             const iw = itemWidth();
             track.style.transition = animate ? "transform 0.4s ease" : "none";
-            track.style.transform  = `translateX(-${index * iw}px)`;
+            track.style.transform = `translateX(-${index * iw}px)`;
             currentIndex = index;
         }
 
