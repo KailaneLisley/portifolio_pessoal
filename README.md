@@ -18,7 +18,6 @@ O site apresenta:
 * Seção **Sobre Mim**
 * **Habilidades técnicas**
 * **Projetos desenvolvidos**
-* **Biografia pessoal**
 * **Formulário de contato**
 
 O layout foi pensado para ser **simples, moderno e responsivo**, funcionando em diferentes tamanhos de tela.
@@ -35,21 +34,43 @@ O layout foi pensado para ser **simples, moderno e responsivo**, funcionando em 
 ## 📂 Estrutura do projeto
 
 ```
-projeto-bio/
+portifolio_pessoal/
 │
-├── index.html
+├── index.html (página principal)
+├── contato.html
+├── habilidades.html
+├── projetos.html
+│
+├── components/
+│   ├── header.html
+│   └── footer.html
 │
 ├── css/
-│   └── style.css
+│   ├── global.css
+│   ├── home.css
+│   ├── contato.css
+│   ├── habilidades.css
+│   └── projetos.css
 │
 ├── js/
-│   └── script.js
+│   ├── loadComponents.js
+│   ├── menu.js
+│   ├── navigation.js
+│   ├── theme.js
+│   ├── contato.js
+│   ├── footer.js
+│   ├── habilidades.js
+│   └── projetos.js
 │
 ├── img/
-│   └── imagens do site
+│   ├── contato/
+│   ├── habilidades/
+│   └── projetos/
 │
-└── fonts/
-    └── fontes utilizadas
+├── fonts/
+│   └── fontes utilizadas
+│
+└── README.md
 ```
 
 ## 📱 Responsividade
