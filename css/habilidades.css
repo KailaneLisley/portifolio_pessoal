@@ -1,39 +1,170 @@
+/* ===== TÍTULOS ===== */
+
 .page-title {
     font-family: "MinhaFonte", serif;
     font-size: 48px;
-    margin-bottom: 12px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-.page-subtitle {
-    font-size: 18px;
-    max-width: 650px;
+.skills-section {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .group-title {
     font-family: "MinhaFonte", serif;
-    font-size: 28px;
-    margin-bottom: 20px;
-    padding-top: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.pills-group {
+/* ===== CARROSSEL ===== */
+
+.skills-carousel {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* janela: esconde o que está fora dos 3 visíveis */
+.carousel-window {
+    overflow: hidden;
+    /* 3 itens de 160px + 2 gaps de 30px */
+    width: calc(5 * 160px + 2 * 55px);
+}
+
+/* trilha que desliza */
+.carousel-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+/* ===== ITEM (ícone + nome) ===== */
+
+.skill-item {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 14px;
 }
 
-/* Reaproveitando .pill do home.css com leve adaptação */
-.pills-group .pill {
-    cursor: default;
-    font-size: 16px;
+.skill-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 
-/* Espaço entre seções */
-.section + .section {
-    padding-top: 0;
+.skill-item span {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-@media (max-width: 600px) {
-    .page-title { font-size: 36px; }
-    .group-title { font-size: 22px; }
+/* ===== SETAS ===== */
+
+.carousel-arrow {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-arrow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(48, 30, 0, 0.15);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 700px) {
+
+    /* em mobile mostra 2 itens */
+    .carousel-window {
+        width: calc(2 * 140px + 1 * 20px);
+    }
+
+    .carousel-track {
+        gap: 20px;
+    }
+
+    .skill-item {
+        flex: 0 0 140px;
+    }
+
+    .skill-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .page-title  { font-size: 36px; }
+    .group-title { font-size: 24px; }
+}
+
+.about-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-family: "MinhaFonte", serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about-cta p {
+    font-size: 18px;
+}
+
+.about-cta button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+    transform: translateY(-3px);
+}
+
+.nav-btn a {
+    font-family: "MinhaFonte", serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-btn a:hover {
+    color: var(--link-hover);
+}
+
+@media (max-width: 420px) {
+
+    /* em telas muito pequenas mostra 1 item */
+    .carousel-window {
+        width: 160px;
+    }
+
+    .skill-item {
+        flex: 0 0 160px;
+    }
 }

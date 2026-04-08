@@ -109,7 +109,7 @@
 .project-extra.aberto {
     max-height: 300px;
     opacity: 1;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .project-extra p {
@@ -140,16 +140,13 @@
     transform: translateY(-2px);
 }
 
-.project-toggle.aberto {
-    /* seta vira pra cima quando expandido */
-}
-
 .about-cta {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
 
 .about-cta h2 {
+    font-family: "MinhaFonte", serif;
     font-size: 45px;
     margin-top: 10px;
 }
@@ -159,7 +156,7 @@
 }
 
 .about-cta button {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
@@ -175,8 +172,13 @@
 }
 
 .nav-btn a {
+    font-family: "MinhaFonte", serif;
     color: var(--text-color);
     text-decoration: none;
+}
+
+.nav-btn a:hover {
+    color: var(--link-hover);
 }
 
 /* ===== RESPONSIVO ===== */
